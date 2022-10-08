@@ -37,7 +37,7 @@ const upload = async (req, res) => {
 };
 
 const getListFiles = (req, res) => {
-  const directoryPath = __basedir + "/resources/static/assets/uploads/";
+  const directoryPath = __basedir + "/resources/";
 
   fs.readdir(directoryPath, function (err, files) {
     if (err) {
